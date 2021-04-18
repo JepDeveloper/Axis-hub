@@ -185,3 +185,11 @@ if game.PlaceId == 4246487209 then
         end
     end)
 end
+if game.PlaceId == 1962086868 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Tower of hell being worked on.";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
+end     
