@@ -164,3 +164,24 @@ if game.PlaceId == 286090429 then --arsenal
         end
     end)
 end
+if game.PlaceId == 4246487209 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Axis Hub V2 - Boss fighting sim", "BloodTheme")
+     
+    --MISC
+    local Misc = Window:NewTab("Misc")
+    local MiscellaneousSection = Misc:NewSection("Miscellaneous")
+
+    MiscellaneousSection:NewToggle("Auto farm", "This isn't out yet", function(state)
+        if state then
+            loadstring(game:HttpGet("https://pastebin.com/raw/V2jzrRFx"))()
+        else
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Axis Hub";
+                Text = "Disabled auto farm";
+                Icon = "http://www.roblox.com/asset/?id=6693768785";
+                Duration = 10;
+            })
+        end
+    end)
+end
