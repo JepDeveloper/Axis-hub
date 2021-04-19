@@ -48,7 +48,7 @@ if game.PlaceId == 155615604 then -- Prison Life
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub V2 - Ninja Legends", "BloodTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - Ninja Legends", "BloodTheme")
 
     -- MAIN
     local Utilities = Window:NewTab("Main")
