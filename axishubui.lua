@@ -53,7 +53,7 @@ if game.PlaceId == 155615604 then -- Prison Life
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded!";
+        Text = "Succesfully loaded Axis Hub V2!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -129,7 +129,7 @@ end
 if game.PlaceId == 286090429 then --arsenal
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded!";
+        Text = "Succesfully loaded Axis Hub V2!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
