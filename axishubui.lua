@@ -1,7 +1,7 @@
 if game.PlaceId == 155615604 then -- Prison Life
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Ragdoll engine is being worked on.";
+        Text = "Successfully loaded Axis Hub V2!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
