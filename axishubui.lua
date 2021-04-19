@@ -1,5 +1,10 @@
 if game.PlaceId == 155615604 then -- Prison Life
-
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Ragdoll engine is being worked on.";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Axis hub V2 - Prison Life", "BloodTheme")
 
@@ -46,9 +51,14 @@ if game.PlaceId == 155615604 then -- Prison Life
     end)
 
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
-
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Succesfully loaded!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Axis Hub V2 - Ninja Legends", "BloodTheme")
+    local Window = Library.CreateLib("Rex Hub V2 - Ninja Legends", "BloodTheme")
 
     -- MAIN
     local Utilities = Window:NewTab("Main")
@@ -117,6 +127,12 @@ elseif game.PlaceId == 3956818381 then -- Ninja Legends
     end)
 end
 if game.PlaceId == 286090429 then --arsenal
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Succesfully loaded!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Axis Hub V2 - Arsenal", "BloodTheme")
 
@@ -165,6 +181,12 @@ if game.PlaceId == 286090429 then --arsenal
     end)
 end
 if game.PlaceId == 4246487209 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Succesfully loaded!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Axis Hub V2 - Boss fighting sim", "BloodTheme")
      
@@ -185,11 +207,19 @@ if game.PlaceId == 4246487209 then
         end
     end)
 end
-if game.PlaceId == 1962086868 then
+if game.PlaceId == 1962086868 then --tower of hell
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
         Text = "Tower of hell is being worked on.";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
-end     
+end
+if game.PlaceId == 2041312716 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Ragdoll engine is being worked on.";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
+end
