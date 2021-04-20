@@ -53,7 +53,7 @@ if game.PlaceId == 155615604 then -- Prison Life
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded Axis Hub V2!";
+        Text = "Succesfully loaded!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -180,46 +180,29 @@ if game.PlaceId == 286090429 then --arsenal
         end
     end)
 end
-if game.PlaceId == 4246487209 then
+if game.PlaceId == 2041312716 then
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded!";
+        Text = "Succesfully loaded Axis Hub V2!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Axis Hub V2 - Boss fighting sim", "BloodTheme")
-     
-    --MISC
-    local Misc = Window:NewTab("Misc")
-    local MiscellaneousSection = Misc:NewSection("Miscellaneous")
+    local Window = Library.CreateLib("Axis Hub V2 - Ragdoll engine", "BloodTheme")
 
-    MiscellaneousSection:NewToggle("Auto farm", "This isn't out yet", function(state)
-        if state then
-            loadstring(game:HttpGet("https://pastebin.com/raw/V2jzrRFx"))()
-        else
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Axis Hub";
-                Text = "Disabled auto farm";
-                Icon = "http://www.roblox.com/asset/?id=6693768785";
-                Duration = 10;
-            })
-        end
+    --main
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewSlider("High speed", "Changes the current character's walk speed.", 500, 20, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
-end
-if game.PlaceId == 1962086868 then --tower of hell
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Axis Hub";
-        Text = "Tower of hell is being worked on.";
-        Icon = "http://www.roblox.com/asset/?id=6693768785";
-        Duration = 10;
-    })
-end
-if game.PlaceId == 2041312716 then
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Axis Hub";
-        Text = "Ragdoll engine is being worked on.";
-        Icon = "http://www.roblox.com/asset/?id=6693768785";
-        Duration = 10;
-    })
-end
+
+    MainSection:NewSlider("High jump power", "Changes the current character's jump power.", 500, 20, function(s) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    --player
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player cheats")
+end   
