@@ -205,4 +205,12 @@ if game.PlaceId == 2041312716 then
     --player
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player cheats")
-end   
+end
+if game.PlaceId == 301549746 then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "The GUI for this game is not out yeT!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
+end    
