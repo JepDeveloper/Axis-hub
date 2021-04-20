@@ -206,11 +206,29 @@ if game.PlaceId == 2041312716 then
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player cheats")
 end
-if game.PlaceId == 301549746 then
+if game.PlaceId == 5847495283 then
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "The GUI for this game is not out yeT!";
+        Text = "Succesfully loaded Axis Hub V2!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Axis Hub V2 - n the jojo game", "BloodTheme")
+
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewToggle("No cooldown", "Adds no cooldown to the player.", function(state)
+        if state then
+            loadstring(game:HttpGet("https://pastebin.com/raw/WVV4yBuh"))()
+        else
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Axis Hub";
+                Text = "Disabled no cooldown!";
+                Icon = "http://www.roblox.com/asset/?id=6693768785";
+                Duration = 10;
+            })
+        end
+    end)
 end    
