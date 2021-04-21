@@ -29,11 +29,11 @@ if game.PlaceId == 155615604 then -- Prison Life
             module["MaxAmmo"] = math.huge
             module["CurrentAmmo"] = math.huge
             module["StoredAmmo"] = math.huge
-            module["FireRate"] = 0.000001
+            module["FireRate"] = 0
             module["Spread"] = 0
             module["Range"] = math.huge
-            module["Bullets"] = 100
-            module["ReloadTime"] = 0.000001
+            module["Bullets"] = 10
+            module["ReloadTime"] = 0
             module["AutoFire"] = true
         end
     end)
@@ -58,7 +58,7 @@ elseif game.PlaceId == 3956818381 then -- Ninja Legends
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub V2 - Ninja Legends", "BloodTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - Ninja Legends", "BloodTheme")
 
     -- MAIN
     local Utilities = Window:NewTab("Main")
