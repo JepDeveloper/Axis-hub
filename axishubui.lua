@@ -1,12 +1,7 @@
+if game.PlaceId == 155615604 then -- Prison Life
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Axis Hub V2 has been discontinued!";
-        Icon = "http://www.roblox.com/asset/?id=6693768785";
-        Duration = 10;
-    })if game.PlaceId == 155615604 then -- Prison Life
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Axis Hub";
-        Text = "Successfully loaded Axis Hub V2!";
+        Text = "Successfully loaded on prison life!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -58,7 +53,7 @@
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded!";
+        Text = "Succesfully loaded on Ninja Legends!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -134,7 +129,7 @@ end
 if game.PlaceId == 286090429 then --arsenal
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded Axis Hub V2!";
+        Text = "Succesfully loaded on Arsenal!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -188,7 +183,7 @@ end
 if game.PlaceId == 2041312716 then
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded Axis Hub V2!";
+        Text = "Succesfully loaded on ragdoll engine!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
@@ -239,15 +234,21 @@ if game.PlaceId == 5847495283 then
 end
 
 if game.PlaceId == 606849621 then
+        game.StarterGui:SetCore("SendNotification", {
+        Title = "Axis Hub";
+        Text = "Successfully loaded on jailbreak!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
+        Duration = 10;
+    })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Axis Hub V2 - Jailbreak", "BloodTheme")
 
     --main
     local Misc = Window:NewTab("Misc")
     local MiscellaneousSection = Misc:NewSection("Miscellaneous")
+    
 
-    MiscellaneousSection:NewButton("No cage", "Makes the character get out of jail.", function()
-        print("Clicked")
+    MiscellaneousSection:NewButton("Anti cage bypass", "Makes the character get out of jail.", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/d57H8xxt"))()
     end)
 end
-
