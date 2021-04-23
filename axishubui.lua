@@ -148,9 +148,9 @@ if game.PlaceId == 286090429 then --arsenal
         end
     end)
 
-    MainSection:NewToggle("Kill all", "Kills all the players in the enemy team.", function(state)
+    MainSection:NewToggle("Silent aim", "Same as aimbot but different.", function(state)
         if state then
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/ArsenalKillAll.lua"))()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/froscpi49/Silent-Aim/main/silentaim.lua"))()
         else
             print("Toggle Off")
         end
@@ -245,6 +245,4 @@ if game.PlaceId == 606849621 then
     MiscellaneousSection:NewButton("No cage", "Makes the character get out of jail.", function()
         print("Clicked")
     end)
-
-    MiscellaneousSection:UpdateSection("Update")
 end
