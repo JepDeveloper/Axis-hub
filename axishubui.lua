@@ -1,12 +1,12 @@
 if game.PlaceId == 155615604 then -- Prison Life
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Rex Hub";
-        Text = "Successfully loaded Rex Hub!";
-        Icon = "http://www.roblox.com/asset/?id=6706617824";
+        Title = "Axis Hub";
+        Text = "Successfully loaded on prison life!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex hub - Prison Life", "GrapeTheme")
+    local Window = Library.CreateLib("Axis hub V2 - Prison Life", "BloodTheme")
 
     -- MAIN
     local Main = Window:NewTab("Utilities")
@@ -18,7 +18,7 @@ if game.PlaceId == 155615604 then -- Prison Life
         Event:InvokeServer(A_1)
     end)
 
-    MainSection:NewDropdown("Gun Mod", "Makes the guns very OP to use.", {"M9", "Remington 870", "AK-47"}, function(v)
+    MainSection:NewDropdown("Gun Mod", "Makes the fire rate to max, turns into an auto, and has infinite ammo.", {"M9", "Remington 870", "AK-47"}, function(v)
         local module = nil
         if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
             module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
@@ -53,12 +53,12 @@ if game.PlaceId == 155615604 then -- Prison Life
 elseif game.PlaceId == 3956818381 then -- Ninja Legends
     game.StarterGui:SetCore("SendNotification", {
         Title = "Axis Hub";
-        Text = "Succesfully loaded!";
+        Text = "Succesfully loaded on Ninja Legends!";
         Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - Ninja Legends", "Synapse")
+    local Window = Library.CreateLib("Axis Hub V2 - Ninja Legends", "BloodTheme")
 
     -- MAIN
     local Utilities = Window:NewTab("Main")
@@ -128,13 +128,13 @@ elseif game.PlaceId == 3956818381 then -- Ninja Legends
 end
 if game.PlaceId == 286090429 then --arsenal
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Rex Hub";
-        Text = "Succesfully loaded Rex Hub!";
-        Icon = "http://www.roblox.com/asset/?id=6706617824";
+        Title = "Axis Hub";
+        Text = "Succesfully loaded on Arsenal!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - Arsenal", "GrapeTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - Arsenal", "BloodTheme")
 
     --MAIN
     local Main = Window:NewTab("Main")
@@ -148,9 +148,9 @@ if game.PlaceId == 286090429 then --arsenal
         end
     end)
 
-    MainSection:NewToggle("Kill all", "Kills all the players in the enemy team.", function(state)
+    MainSection:NewToggle("Silent aim", "Same as aimbot but different.", function(state)
         if state then
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/TERIHAX/Scripts/main/ArsenalKillAll.lua"))()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/froscpi49/Silent-Aim/main/silentaim.lua"))()
         else
             print("Toggle Off")
         end
@@ -182,13 +182,13 @@ if game.PlaceId == 286090429 then --arsenal
 end
 if game.PlaceId == 2041312716 then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Rex Hub";
-        Text = "Succesfully loaded Rex Hub!";
-        Icon = "http://www.roblox.com/asset/?id=6706617824";
+        Title = "Axis Hub";
+        Text = "Succesfully loaded on ragdoll engine!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - Ragdoll engine", "GrapeTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - Ragdoll engine", "BloodTheme")
 
     --main
     local Main = Window:NewTab("Main")
@@ -203,22 +203,18 @@ if game.PlaceId == 2041312716 then
     end)
 
     --player
-    local Trolling = Window:NewTab("Trolling")
-    local TrollingSection = Trolling:NewSection("Trolling")
-
-    TrollingSection:NewTextBox("Kill player", "Kills the player (Wait for it to fix)", function(txt)
-        loadstring(game:HttpGet("https://pastebin.com/raw/iHMQZGnP"))()
-    end)
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player cheats")
 end
 if game.PlaceId == 5847495283 then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Rex Hub";
-        Text = "Succesfully loaded Rex Hub!";
-        Icon = "http://www.roblox.com/asset/?id=6706617824";
+        Title = "Axis Hub";
+        Text = "Succesfully loaded Axis Hub V2!";
+        Icon = "http://www.roblox.com/asset/?id=6693768785";
         Duration = 10;
     })
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - n the jojo game", "GrapeTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - n the jojo game", "BloodTheme")
 
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
@@ -228,57 +224,37 @@ if game.PlaceId == 5847495283 then
             loadstring(game:HttpGet("https://pastebin.com/raw/WVV4yBuh"))()
         else
             game.StarterGui:SetCore("SendNotification", {
-                Title = "Rex Hub";
-                Text = "Disabled no cooldown.";
-                Icon = "http://www.roblox.com/asset/?id=6706617824";
+                Title = "Axis Hub";
+                Text = "Disabled no cooldown!";
+                Icon = "http://www.roblox.com/asset/?id=6693768785";
                 Duration = 10;
             })
         end
     end)
 end
-if game.PlaceId == 2377868063 then
+
+if game.PlaceId == 606849621 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - Strucid", "GrapeTheme")
-    
+    local Window = Library.CreateLib("Axis Hub V2 - Jailbreak", "BloodTheme")
+
     --main
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+    local Misc = Window:NewTab("Misc")
+    local MiscellaneousSection = Misc:NewSection("Miscellaneous")
+    
 
-    MainSection:NewToggle("Test", "This is a test for strucid.", function(state)
-        if state then
-            print("A fucking test is On")
-        else
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Rex Hub";
-                Text = "Disabled test.";
-                Icon = "http://www.roblox.com/asset/?id=6706617824";
-                Duration = 10;
-            })
-        end
+    MiscellaneousSection:NewButton("No cage", "Makes the character get out of jail.", function()
+        print("Clicked")
     end)
-
-    MainSection:NewKeybind("Test Keybind", "This just a test.", Enum.KeyCode.F, function()
-        warn("gay")
-    end)    
 end
 
-if game.PlaceId == 185655149 then
+if game.PlaceId == 1004691966 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Rex Hub - Bloxburg", "BloodTheme")
+    local Window = Library.CreateLib("Axis Hub V2 - Solera hotels", "BloodTheme")
 
-    local Autofarm = Window:NewTab("Autofarm")
-    local AutofarmSection = Autofarm:NewSection("Autofarm")
+    local Other = Window:NewTab("Other")
+    local OtherSection = Other:NewSection("Just other stuff.")
 
-    AutofarmSection:NewToggle("Autofarm", "Autofarms all of the work places.", function(state)
-        if state then
-            loadstring(game:HttpGet("https://pastebin.com/raw/GXAVZY4h"))()
-        else
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Rex Hub";
-                Text = "Disabled autofarm.";
-                Icon = "http://www.roblox.com/asset/?id=6706617824";
-                Duration = 10;
-            })
-        end
+    OtherSection:NewButton("No clip", "No clips", function()
+        print("Clicked")
     end)
 end    
