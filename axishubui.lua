@@ -255,6 +255,13 @@ if game.PlaceId == 1004691966 then
     local OtherSection = Other:NewSection("Just other stuff.")
 
     OtherSection:NewButton("No clip", "No clips", function()
-        print("Clicked")
+        loadstring(game:HttpGet("https://pastebin.com/raw/w0XEUW3y"))()
     end)
+
+    --credits
+
+    local Credits = Window:NewTab("Credits")
+    local CreditsSection = Credits:NewSection("Thanks to Zerio#0880 for making the tutorial!")
+
+    local Credits2Section = Credits:NewSection("All scripting made by iCyphy!")
 end    
